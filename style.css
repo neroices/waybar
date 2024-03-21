@@ -1,0 +1,136 @@
+* {
+    font-family:"Lexend";
+    font-size: 14px;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+window > box {
+    background-color: #11111b;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 7px;
+  }
+  
+.modules-left {
+    padding: 3px;
+}
+
+.modules-right {
+    padding: 3px;
+}
+
+.modules-center {
+    padding: 3px;
+}
+
+#workspaces {
+   background-color: #313244;
+   border-radius: 4px;
+   padding: 8px 8px 8px 20px;
+   margin: 4px 0;
+}
+
+#workspaces button {
+    min-height: 0;
+    padding: 0 7px;
+    margin-left: 7px;
+    color: #cdd6f4;
+}
+
+#workspaces button.focused {
+    color: #45475a;
+    background-color: #cdd6f4;
+}
+
+#workspaces button.urgent {
+    color: #f5e0dc;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes blink {
+    to {
+        color: #313244;
+        background-color: #f5e0dc;
+    }
+}
+
+#custom-launcher {
+    background-color: #313244;
+    border-radius: 4px;
+    padding: 8px 8px 8px 4px;
+    margin: 4px 0;
+    color: #89dceb;
+}
+
+#custom-power {
+   background-color: #313244;
+   border-radius: 20px;
+   padding: 8px 12px 8px 8px;
+   margin: 4px 0;
+}
+
+#cpu {
+    background-color: #313244;
+    border-radius: 20px 4px 4px 20px;
+    padding: 8px 8px 8px 20px;
+    margin: 4px 0;
+    color: #f2cdcd;
+}
+
+#memory {
+    background-color: #313244;
+    border-radius: 4px;
+    padding: 8px 8px 8px 20px;
+    margin: 4px 0;
+    color: #fab387;
+}
+
+#wireplumber {
+    background-color: #313244;
+    border-radius: 4px;
+    padding: 8px 8px 8px 20px;
+    margin: 4px 0;
+    color: #f9e2af;
+}
+
+#wireplumber.muted {
+    color: #f38ba8;
+}
+
+#clock {
+    background-color: #313244;
+    border-radius: 4px 20px 20px 4px;
+    padding: 8px 10px 10px 10px;
+    margin: 4px 0;
+    color: #94e2d5;
+}
+
+#network {
+    background-color: #313244;
+    color: #cdd6f4;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 4px 0;
+}
+
+#network.disabled {
+    color: #f38ba8;
+}
+
+#tray {
+    background-color: #313244;
+    border-radius: 20px;
+    padding: 8px 12px 8px 12px;
+    margin: 4px 0;
+}
